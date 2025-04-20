@@ -77,44 +77,36 @@ body::after {
 
 /**/
 
-/**
+/**/
 
-
-
-
-/* Estilos generales para la tabla */
 table {
     max-width: 100%;
     max-height: 100%;
-    margin-top: 50px;  /* Ajusta la posición de la tabla si lo deseas */
+    margin-top: 50px; 
     height: 50vh;
-    width: 90vw; /* La tabla ocupa el 80% del ancho de la pantalla */
-    margin: 20px auto; /* Centramos la tabla en la pantalla, con un pequeño margen superior e inferior */
+    width: 90vw; 
+    margin: 20px auto; 
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
 
-/* Estilo para las celdas de la tabla */
 th, td {
-    padding: 10px; /* Aumentamos el padding para hacer las celdas más grandes */
+    padding: 10px; 
     text-align: center;
     border: 1px solid #ddd;
     background-color: rgb(255, 255, 255);
-    font-size: 1.2em; /* Aumento del tamaño de la fuente */
+    font-size: 1.2em; 
 }
 
-/* Estilo para los encabezados */
 th {
     background-color: #000000;
-    color: white; /* Color de texto blanco para los encabezados */
+    color: white; 
 }
 
-/* Estilo para las filas */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Estilo para la tabla cuando se pasa el ratón sobre las filas */
 tr:hover {
     background-color: #ddd;
 }

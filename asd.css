@@ -1,4 +1,3 @@
-/* Estilos generales */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +7,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white; /* Fondo blanco */
+    background-color: white; 
 }
 
 .header {
@@ -30,38 +29,37 @@ html, body {
 }
 
 .profile-wrapper {
-    padding: 80px 20px; /* Espacio debajo del header */
-
+    padding: 80px 20px; 
     flex-direction: column;
     align-items: center;
 }
 
 .profile-user-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre el nombre+imagen y el botón */
-    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
     max-width: 100vw;
     margin-bottom: 20px;
-    padding: 0 20px; /* Espaciado a los lados */
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    padding: 0 20px; 
+    text-align: left; 
     padding-top: 5px;
     margin-bottom: 60px;
 }
 .profile-user-container-separation {
-    align-items: center; /* Alinear verticalmente */
+    align-items: center; 
     display: flex;
 }
 .profile-info {
     display: flex;
-    align-items: center; /* Alinear la imagen y el texto verticalmente */
+    align-items: center; 
 }
 
 .User-image {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    margin-right: 15px; /* Espaciado entre la imagen y el nombre */
+    margin-right: 15px;
 }
 .profile-user-container p {
     text-align: left;
@@ -89,7 +87,7 @@ html, body {
 }
 
 .column {
-    width: 50%; /* Divide en dos columnas */
+    width: 50%; 
 }
 
 .column p {
