@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" class="Configuracion">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración Control de Acceso - APP</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <img src="/imgs/logo1.webp" alt="Logo de la empresa" class="logo" loading="lazy">
+    <button>☰</button>
+  </header>
+
+  <div class="container-miCuenta">
+    <aside id="sidebar">
+      <nav>
+        <ul>
+          <li data-section="cuenta">Tu cuenta</li>
+          <li data-section="accesibilidad">Accesibilidad, display y lenguajes</li>
+          <li data-section="seguridad">Seguridad y acceso a la cuenta</li>
+          <li data-section="notificaciones">Notificaciones</li>
+          <li data-section="ayuda">Centro de ayuda</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <img src="/imgs/szer.webp" width="60px" height="60px" alt="Avatar de usuario" />
+          <div>
+            <strong>X Y</strong>
+            <p>00000000</p>
+            <p>Última edición: 01-01-25, 18:00 AM</p>
+          </div>
+        </div>
+        <div>
+          <button class="fa-buttons"><i class="fa-solid fa-pencil"></i></button>
+          <button><i class="fa-solid fa-book"></i></button>
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button id="hamburgerBtn"><i class="fa-solid fa-compass"></i></button>
+        </div>
+      </header>
+    
+      <!-- SECCIÓN 1: TU CUENTA -->
+      <section id="cuenta" class="seccion visible">
+        <h1>Mi cuenta</h1>
+        <p>Edita tu información personal y de acceso a la plataforma.</p>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="X Y" />
+          </div>
+          <div>
+            <label for="nombre">Apellido</label>
+            <input type="text" id="nombre" name="nombre" value="X Y" />
+          </div>
+          <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio" name="domicilio" value="X" />
+          </div>
+          <div>
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais" value="X" />
+          </div>
+          <h2>Metodos de contacto</h2>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" value="X@gmail.com" />
+          </div>
+          <div>
+            <label for="email">Télefono particular</label>
+            <input type="email" id="email" name="email" value="X@gmail.com" />
+          </div>
+          <div>
+            <label for="email">Télefono celular</label>
+            <input type="email" id="email" name="email" value="X@gmail.com" />
+          </div>
+          <button type="submit">Guardar cambios</button>
+        </form>
+      </section>
+    
+      <!-- ESTOS SON PARA EL FUTURO -->
+      <!-- SECCIÓN 2: ACCESIBILIDAD -->
+      <section id="accesibilidad" class="seccion">
+        <h1>Accesibilidad</h1>
+        <p>Acá se va a poder configurar el idioma, los colores/estilos de fuente y otros ajustes de la aplicación</p>
+      </section>
+    
+      <!-- SECCIÓN 3: SEGURIDAD -->
+      <section id="seguridad" class="seccion">
+        <h1>Seguridad</h1>
+        <p>Desde acá se configura la autenticación de la cuenta (se podrá permitir la verificación de dos pasos y cambiar las contraseñas); Ver información sobre cuándo inició sesión en su cuenta y las aplicaciones que conectó a su cuenta; Dispositivos conectados a esta cuenta</p>
+      </section>
+    
+      <!-- SECCIÓN 4: NOTIFICACIONES -->
+      <section id="notificaciones" class="seccion">
+        <h1>Notificaciones</h1>
+        <p>Desde acá se podrá gestionar todo sobre las notificaciones (si se puede recibir o no, los muteos, etc)</p>
+
+      </section>
+    
+      <!-- SECCIÓN 5: AYUDA -->
+      <section id="ayuda" class="seccion">
+        <h1>Centro de ayuda</h1>
+        <p>Permitirá comunicarse con alguien de la institución para recibir ayuda en caso de problemas con el sistema</p>
+      </section>
+    </main>
+  </div>
+  <script src="/js/Configuracion.js"></script>
+</body>
+</html>

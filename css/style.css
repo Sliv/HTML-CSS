@@ -1,0 +1,555 @@
+
+/* Estilos generales*/
+
+*, *::before,*::after {
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body::after {
+    content: ''; 
+    position: absolute; 
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: rgba(247, 246, 246, 0.3); 
+    z-index: -1; 
+}
+
+.blue-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.blue-container { 
+  background-color: rgba(74, 153, 238, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Configuración */
+
+.Configuracion {
+
+    .seccion {
+        display: none;
+      }
+      
+      .seccion.visible {
+        display: block;
+      }
+    
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fb;
+  }
+
+  .container-miCuenta {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          padding: 10px 0;
+          cursor: pointer;
+          color: #555;
+
+          &.active {
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+
+  section {
+    margin-top: 30px;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  form {
+    div {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+  #hamburgerBtn {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  @media (max-width: 768px) {
+    .container-miCuenta {
+      flex-direction: column;
+    }
+
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transform: translateX(-100%);
+      z-index: 1000;
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+
+    #hamburgerBtn {
+      display: block;
+    }
+  }
+}
+
+/* Estilos de Login.html */
+
+    .loginyregistro {
+        justify-content: center; 
+        align-items: center;
+
+        .fondoBeltran {
+            background-image: url(/imgs/IBeltran.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            
+            .logo {
+                width: 150px;
+                height: 50px;
+            }
+          
+            .login-container h2 {
+                font-size: 24px;
+                color: #ffffff;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            
+            .login-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .login-form input {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            
+            .login-form button {
+                width: 80%;
+                padding: 12px;
+                margin-bottom: 10px;
+                background-color: #4272db;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            .login-form button:hover {
+                background-color: #005694;
+            }
+            
+            .Forgot-password, .Create-account {
+                color: #fafafa;
+                text-decoration: none;
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+            
+            .Forgot-password:hover, .Create-account:hover {
+                text-decoration: underline;
+                color: #045238;
+            }
+            
+            .Forgot-password:hover, .Create-account:hover {
+                text-decoration: underline;
+                color: #045238; 
+            }
+        }
+    }
+
+/* Estilos de Mantenimiento.html */
+
+    .contenedor-mantenimiento {
+        text-align: center;
+        justify-self: center;
+        padding: 80px 20px 20px 20px; 
+        width: 100%;
+        max-width: 600px;
+        img {
+            max-width: 40%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .boton {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline;
+            text-decoration: none;
+        }
+        .boton:hover {
+            background-color: #1a0dd4;
+        }
+    }
+
+/* Estilos de QR.html */
+
+.qr {
+    height: 50vh;
+    border-radius: 5%;
+}
+.QR-text {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #007BFF; 
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.header img {
+    margin-top: 4px;
+    height: 50px; 
+}
+
+.footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+
+.footer-icons {
+    display: none; 
+}
+
+.footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+
+/* Media queries para los tamaños */
+
+@media (max-width: 768px) {
+    .header, .footer {
+        padding: 6px; 
+    }
+
+    /* Login */
+    .login-wrapper {
+        padding: 20px; 
+    }
+
+    .login-container {
+        width: 90%; 
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-icons i {
+        font-size: 40px;
+    }
+    .contenedor-mantenimiento {
+        .boton {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 100%;
+    }
+
+    .header, .footer {
+        padding: 5px; 
+    }
+
+    .login-form input {
+        padding: 12px; 
+    }
+
+    .login-form button {
+        padding: 12px; 
+    }
+}
+
+  .Tabla {
+
+    .table-container {
+      margin: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+      background-color: #1976d2;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dni {
+      font-size: 0.9em;
+      color: gray;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .pagination-info {
+      color: #555;
+    }
+
+    .pagination-controls button {
+      padding: 6px 12px;
+      margin: 0 5px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .pagination {
+  flex-direction: column;
+  align-items: center;
+}
+
+  .pagination-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .pagination-controls button.active {
+    background-color: #0077ff;
+    font-weight: bold;
+  }
+
+  .pagination-controls button:not(:disabled):hover {
+    background-color: #0077ff;
+  }
+
+    .pagination-controls button:disabled {
+      background-color: #ccc;
+      cursor: default;
+    }
+
+    .search-and-button-container {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 8px 8px 8px 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-left: auto;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+    }
+
+    @media (max-width: 768px) {
+      .search-and-button-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .buttons {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .buttons button {
+        width: 100%;
+      }
+    }
+  }
